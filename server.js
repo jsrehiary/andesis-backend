@@ -36,7 +36,7 @@ const historyWeather = db.prepare(`
 SELECT *
 FROM weather_logs
 ORDER BY id DESC
-LIMIT 50
+LIMIT 30
 `);
 
 app.post("/weather", (req, res) => {
